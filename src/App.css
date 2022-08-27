@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 
 
 .App {
@@ -53,8 +55,8 @@ button:hover {
 }
 h1{
   color: black;
-  font-family: 'Silkscreen', cursive;
-  font-size: 3rem;
+  font-family: 'Rubik Iso', cursive;
+  font-size: 4rem;
 }
 img{
   height: 250px;
