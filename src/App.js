@@ -189,7 +189,7 @@ function App() {
         console.log("--------------------------------------------");
       }}>search</button>
 
-      <h1>Day-2 String Methods <br></br><img src='https://img.freepik.com/premium-vector/system-software-update-upgrade-concept-loading-process-screen-vector-illustration_175838-2182.jpg?w=2000' alt=''></img></h1>
+      <h1>Day-2 String Methods <br></br><img src='https://c.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt=''></img></h1>
     </div>
   );
 }
