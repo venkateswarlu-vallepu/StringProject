@@ -189,7 +189,127 @@ function App() {
         console.log("--------------------------------------------");
       }}>search</button>
 
-      <h1>Day-2 String Methods <br></br><img src='https://c.tenor.com/wfEN4Vd_GYsAAAAM/loading.gif' alt=''></img></h1>
+      <h1>Day-2 String Methods</h1>
+    
+      <button
+      type='button' onClick={()=>{
+        console.log("Slice Method:-")
+        let hero = "The Joker is portrayed as a criminal mastermind.Joker Introduced as a psychopath with a warped,";
+       console.log("Input is","\n",hero);
+       console.log("output of given indexes is","\n",hero.slice(3 ,9),"\n",hero.slice(28,36))
+
+      }}>Slice</button>
+
+     <button
+      type='button' onClick={()=>{
+        console.log("Split Method:-")
+        let hero = "Ravana is the mythical multi-headed demon-king.Ravana could change into any form he wished.";
+       console.log("Input is","\n",hero);
+       console.log("output of given indexes is","\n",hero.split("R"),"\n",hero.split("m"),"\n",hero.split(" "))
+
+      }}>Split</button>
+      
+
+      <button
+      type='button' onClick={()=>{
+        console.log("sub-(str&string) Method:-")
+        let hero = "Ravana is the mythical multi-headed demon-king.Ravana could change into any form he wished.";
+        console.log("sybstr method:-")
+       console.log("Input is","\n",hero);
+       console.log("output of given indexes is","\n",hero.substr(47,60))
+
+       console.log("substring method:-")
+       let hero1 = "Ravana is the mythical multi-headed demon-king.Ravana could change into any form he wished.";
+       console.log("Input is ","\n",hero1)
+       console.log("output of given indexes is ","\n",hero1.substring(0,46)) 
+       
+
+      }}>sub-(str&string)</button>
+
+      <button type='button' onClick={()=>{
+        console.log("Trim Method:-")
+        console.log("Gaps in starting & ending of string:-")
+        let villian = "                    A cruelly malicious person who is involved in or devoted to wickedness or crime;who constitutes an important evil agency in the plot.                        ";
+        console.log("Given Input is ","\n",`***${villian}***`);
+        console.log("Output is","\n",`***${villian.trim()}***`);
+
+        console.log("Gaps inbetween the elements:-")
+        let villian1 = "                    A       cruelly malicious person who        is involved in or devoted to wickedness or crime;who constitutes an important evil agency in the plot.                        ";
+        console.log("Given Input is ","\n",`***${villian1}***`);
+        console.log("Output is","\n",`***${villian1.trim()}***`);
+      }}>trim</button>
+
+      <button type='button' onClick={()=>{
+        console.log("toUpperCase:-");
+        let TTD = "Tirumala Tirupati Devasthanams (TTD) is an independent trust which manages the temples including the Tirumala Venkateswara Temple in Andhra Pradesh.";
+        console.log("Before Using Method:-")
+        console.log(TTD);
+        console.log("After Using Method:-","\n",TTD.toUpperCase());
+
+      }}>toUpperCase</button>
+      
+      <button type='button' onClick={()=>{
+        console.log("toLowerCase:-");
+        let TTD = "Tirumala Tirupati Devasthanams (TTD) is an independent trust which manages the temples including the Tirumala Venkateswara Temple in Andhra Pradesh.";
+        console.log("Before Using Method:-")
+        console.log(TTD);
+        console.log("After Using Method:-","\n",TTD.toLowerCase());
+
+      }}>toLowerCase</button>
+
+      <h1>Other Topics</h1>
+      <h2>Destructuring of Array & Object</h2>
+
+      <button type='button' onClick={()=>{
+        console.log("Destructuring of Array:-")
+        let array = ["Nikhil","Anupama","Srinivas Reddy","Harsha"];
+        console.log("Normal array ","\n",array);
+        let [hero,heroine,comedian1,comedian2] = array;
+        console.log("After Destructuring:-");
+        console.log(hero,"\n",heroine,"\n",comedian1,"\n",comedian2);
+        
+
+      }}>Array Destructuring</button>
+
+      <button type='button' onClick={()=>{
+        console.log("Destructuring of Object:-")
+        let object = {
+          name: "Nikhil",
+          age : "37",
+          Prof : "Actor",
+          maritalStatus : "Married",
+          totalMovies : "17",
+          hits: "10",
+          flops: "7"
+        }
+        let heroName = object.name;
+        let heroAge = object.age;
+        let heroProf = object.Prof;
+        let heroMS = object.maritalStatus;
+        let movies = object.totalMovies;
+        let hitMovies = object.hits;
+        let flopMovies = object.flops; 
+        console.log("Hero Name:- ","\n",heroName);
+        console.log("Hero Age:- ","\n",heroAge);
+        console.log("Hero Profession:- ","\n",heroProf);
+        console.log("Hero Marital Status:- ","\n",heroMS);
+        console.log("Total Movies:- ","\n",movies);
+        console.log("Hits:- ","\n",hitMovies);
+        console.log("Flops:- ","\n",flopMovies);
+      }}>Object Destructuring</button>
+      
+      <button type='button' onClick={()=>{
+       console.log("Rest Parameters(RP)")  
+        let   RP = (...rp)=>{
+          let value = "";
+          value = rp;
+          console.log(value);
+      
+        } 
+        RP(43,54,32,"venkatesh",74,738,936);
+        console.log(RP);
+       
+      }}>Rest Parameters</button>
     </div>
   );
 }
