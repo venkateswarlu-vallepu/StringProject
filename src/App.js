@@ -258,7 +258,7 @@ function App() {
       }}>toLowerCase</button>
 
       <h1>Other Topics</h1>
-      <h2>Destructuring of Array & Object</h2>
+      <h2>Destructuring of Array & Object <br></br>Rest Parameters</h2>
 
       <button type='button' onClick={()=>{
         console.log("Destructuring of Array:-")
